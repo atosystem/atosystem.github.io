@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[576],{1898:function(e,t,a){"use strict";a.r(t);var n=a(7294),r=a(5444),l=a(7849),u=a(6179);a(1496);t.default=function(){var e=(0,r.K2)("728967068");console.log(e);return n.createElement(l.Z,null,n.createElement(u.Z,{title:"CV"}),n.createElement("h1",{onLoad:void 0},"CV"),n.createElement("div",{dangerouslySetInnerHTML:{__html:e.markdownRemark.html}}))}}}]);
+//# sourceMappingURL=component---src-pages-cv-js-b7ef29f92ddfbb0a15da.js.map
