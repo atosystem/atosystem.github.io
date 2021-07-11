@@ -50,7 +50,7 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
+  // console.log(data)
   const outter_links = data.site.siteMetadata.outter_links
   return (
     <Layout>

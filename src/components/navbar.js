@@ -30,9 +30,9 @@ const Navbar = () => {
   `)
   const site_links = data.allSite.nodes[0].siteMetadata.navbar_links
   const website_title = data.allSite.nodes[0].siteMetadata.title
-  console.log("test data")
-  console.log(data.allSite.nodes[0].siteMetadata.navbar_links)
-  console.log(site_links)
+  // console.log("test data")
+  // console.log(data.allSite.nodes[0].siteMetadata.navbar_links)
+  // console.log(site_links)
 
   return (
     <>

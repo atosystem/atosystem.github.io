@@ -2,9 +2,9 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Ian Shih`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Ian Shih 施貽仁`,
     author: `@yijenshih`,
-    siteUrl: `https://atosystem.github.io/`,
+    siteUrl: process.env.URL,
     indexPageBackgroundImg: "",
     email: "yjshih23@gmail.com",
     navbar_links: [
@@ -115,6 +115,35 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => process.env.URL,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

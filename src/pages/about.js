@@ -23,7 +23,7 @@ const AboutPage = () => {
       }
     }
   `)
-  console.log(data)
+  // console.log(data)
   // const bg_music_url = data.bg_music.publicURL
   // const bg_audio_instance = new Audio(bg_music_url)
   // bg_audio_instance.volume = 1

@@ -43,10 +43,10 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
-  console.log(
-    data.alltags.group.sort((t1, t2) => t2.totalCount - t1.totalCount)
-  )
+  // console.log(data)
+  // console.log(
+  //   data.alltags.group.sort((t1, t2) => t2.totalCount - t1.totalCount)
+  // )
   // const outter_links = data.site.siteMetadata.outter_links
   return (
     <Layout>

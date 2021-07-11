@@ -12,8 +12,7 @@ const BlogTags = ({ pageContext, data }) => {
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
-  console.log("asd")
-  console.log(edges.map(({ node }) => node))
+
   return (
     <Layout>
       <div>
