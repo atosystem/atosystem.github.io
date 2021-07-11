@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[682],{5518:function(e,t,a){"use strict";a.r(t);var u=a(7294),l=a(5444),n=a(7849),r=a(3751);a(1496);t.default=function(){var e=(0,l.K2)("1777579754");console.log(e);var t=e.bg_music.publicURL,a=new Audio(t);a.volume=1;return u.createElement(n.Z,null,u.createElement(r.Z,{title:"About"}),u.createElement("h1",{onLoad:void a.play()},"About"))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-01e442498db0b59fd6aa.js.map
