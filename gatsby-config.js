@@ -128,10 +128,7 @@ module.exports = {
         }
       `,
         resolveSiteUrl: () => process.env.URL,
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-        }) => {
-          
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map(page => {
             return { ...page }
           })
