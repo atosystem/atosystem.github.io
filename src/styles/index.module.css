@@ -7,6 +7,7 @@
 .profolio_left{
 
     flex-basis: 35%;
+    flex-shrink: 1;
     text-align: center;
 }
 
@@ -21,6 +22,7 @@
 
 .profolio_right{
     flex-basis: 65%;
+    flex-shrink: 1;
 }
 
 .profolio_right_content{
@@ -70,6 +72,17 @@
     text-decoration:underline ;
     
 }
+
+.section_div{
+    display:flex;
+    
+}
+
+.section_div h3{
+    margin-right: 3px;
+}
+
+
 
 
 

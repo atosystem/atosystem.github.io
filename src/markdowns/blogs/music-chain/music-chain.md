@@ -5,7 +5,8 @@ slug: music-chain
 date: 2021-07-01T00:00:00+00:00
 thumb: ./MusicChainArchitecture-Architecture.png
 featuredImg: ./MusicChainArchitecture-Architecture.png
-tags: ["blockchain", "js"]
+tags: ["blockchain", "js","project"]
+description: "A platform to make Original and Cover Visible and Valuable"
 ---
 
 # MusicChain
@@ -18,20 +19,20 @@ Demo Link : [Youtube](https://www.youtube.com/watch?v=rmtS9UxWCMc)
 
 1. First make sure you start your docker and Ganache. Then execute `./setup.sh`folder.
 
-```
+```bash
 ./setup.sh
 ```
 
 2. After docker container starts running, execute the folling commands to alter IPFS settings. This settings is to bypass the CORS policy to let frontend can directly talk to the backend from different origins.
 
-```
+```bash
 docker exec ipfs_host ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
 docker exec ipfs_host ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST", "OPTIONS"]'
 ```
 
 3. Finally restart docker container. If you start the docker-compose without datached, you may need to open another terminal and change to the project directory and then run this command.
 
-```
+```bash
 docker-compose restart ipfs
 ```
 
@@ -39,7 +40,7 @@ docker-compose restart ipfs
 
 With Ganache and docker container running (backend & ipfs), go to `./react` and execute
 
-```
+```bash
 $ npm start
 ```
 
@@ -49,13 +50,13 @@ MusicChain is then running at [http://localhost:3000/](http://localhost:3000/)
 
 **Notice that you should also restart your blockchain**
 
-```
+```bash
 ./reset_backend.sh
 ```
 
 ### Formater
 
-```
+```bash
 npm run format
 ```
 

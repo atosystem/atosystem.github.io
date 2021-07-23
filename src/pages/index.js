@@ -13,42 +13,75 @@ import { FaMedium } from "@react-icons/all-files/fa/FaMedium"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "head_crop.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+  {
+    file(relativePath: {eq: "head_crop.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
-      site {
-        siteMetadata {
-          email
-          outter_links {
-            facebook {
-              title
-              url
-            }
-            instagram {
-              title
-              url
-            }
-            medium {
-              title
-              url
-            }
-            twitter {
-              title
-              url
-            }
-            github {
-              title
-              url
-            }
+    }
+    site {
+      siteMetadata {
+        email
+        outter_links {
+          facebook {
+            title
+            url
+          }
+          instagram {
+            title
+            url
+          }
+          medium {
+            title
+            url
+          }
+          twitter {
+            title
+            url
+          }
+          github {
+            title
+            url
           }
         }
       }
     }
+    projects: allMarkdownRemark(
+      limit: 5
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {fileAbsolutePath: {regex: "/blog/"}, frontmatter: {tags: {in: "project"}}}
+    ) {
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "YYYY-MM-DD")
+          description
+          slug
+        }
+        id
+      }
+    }
+    blogs: allMarkdownRemark(
+      limit: 5
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {fileAbsolutePath: {regex: "/blog/"}}
+    ) {
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "YYYY-MM-DD")
+          description
+          slug
+        }
+        id
+      }
+    }
+  }
+  
+  
+  
   `)
   // console.log(data)
   const outter_links = data.site.siteMetadata.outter_links
@@ -120,10 +153,20 @@ const IndexPage = () => {
               National Taiwan University
             </p>
             <p>Passionate in music and technology</p>
+            
+            <div className={styles.section_div} ><h3>Recent Projects</h3>  <Link to="/tags/project">more...</Link></div>
+            <ul>
+              {data.projects.nodes.map((n)=>{
+                return <li key={n.id}><Link to={`/blogs/${n.frontmatter.slug}`}>{`${n.frontmatter.date}   ${n.frontmatter.title}`}</Link></li>
+              })}
+            </ul>
+            <div className={styles.section_div} ><h3>Recent Blogs</h3><Link to="/blog">more...</Link></div>
+            <ul>
+              {data.blogs.nodes.map((n)=>{
+                return <li key={n.id}><Link to={`/blogs/${n.frontmatter.slug}`}>{`${n.frontmatter.date}   ${n.frontmatter.title}`}</Link></li>
+              })}
+            </ul>
 
-            <h2>Recent Blogs</h2>
-
-            <h2>Projects</h2>
           </div>
         </div>
       </div>

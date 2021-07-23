@@ -58,7 +58,10 @@ module.exports = {
           `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
-            options: {},
+            options: {
+              "linkImagesToOriginal" : false,
+              "showCaptions" : false,
+            },
           },
           {
             resolve: `gatsby-remark-highlight-code`,
@@ -141,6 +144,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: process.env.IG_ACCESS_TOKEN
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
