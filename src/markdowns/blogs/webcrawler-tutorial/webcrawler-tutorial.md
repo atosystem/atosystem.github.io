@@ -14,7 +14,7 @@ tags: ["python", "web"]
 
 > 💡 Disclaimer : Only for education purpose, do not do anything against law.
 
-Github : [Link](https://github.com/atosystem/webcrawler_tutorial)
+Github : [Link](https://github.com/ntueecamp/webcrawler_tutorial)
 
 ## 🛠️ Tools for Crawling
 
@@ -131,7 +131,7 @@ for i in range(len(honor_content)):
     print("{} - {}".format(honor_title[i].string,honor_content[i].string))
 ```
 
-## ♥️IG Web Crawler
+## 🧡 IG Web Crawler
 
 The scenario is more difficult for authentication websites.
 
