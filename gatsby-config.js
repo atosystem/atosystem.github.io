@@ -46,6 +46,10 @@ module.exports = {
         title: "atosystem",
         url: "https://github.com/atosystem",
       },
+      linkedin: {
+        title: "Ian Shih",
+        url: "https://www.linkedin.com/in/ian-shih-77a66218b/"
+      }
     },
   },
   plugins: [

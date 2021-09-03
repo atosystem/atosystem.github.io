@@ -7,7 +7,7 @@ import * as styles from "../styles/index.module.css"
 import Img from "gatsby-image"
 
 import TwitterIcon from "@material-ui/icons/Twitter"
-import { Email, Facebook, GitHub, Instagram } from "@material-ui/icons"
+import { Email, Facebook, GitHub, Instagram, LinkedIn } from "@material-ui/icons"
 
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium"
 
@@ -151,6 +151,13 @@ const IndexPage = () => {
                   <div>{outter_links["medium"].title}</div>
                 </a>
               </div>
+              {/* <div className={styles.outter_links_div}>
+              <a href={outter_links["linkedin"].url} target="_blank">
+                <LinkedIn />
+                  <div>{outter_links["linkedin"].title}</div>
+                </a>
+              </div> */}
+              
 
               {/* <div>
               <GitHub/> {outter_links["github"].title}
