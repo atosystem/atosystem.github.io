@@ -68,12 +68,13 @@ const SurveyEnPage = () => {
       If you have any problem, feel free to contact me (Ian Shih) via <a href={"mailto:yjshih23@gmail.com"}>yjshih23@gmail.com</a><br/>
       Happy listening!
       <br/>
-      <div style={{margin:"10px",textAlign:"center"}}>
+      The survey is closed!
+      {/* <div style={{margin:"10px",textAlign:"center"}}>
       <Button onClick={handleOnclick} variant="outlined" color="primary">
       Click Me
     </Button>
     
-    </div>
+    </div> */}
     </Layout>
   )
 }

@@ -66,12 +66,13 @@ const SurveyPage = () => {
       準備好後，請點選下方按鈕來填寫 google 表單，網站將會幫你隨機分配到一個表單<br/>
       若有任何疑問，歡迎透過 e-mail 與我聯繫 (<a href={"mailto:yjshih23@gmail.com"}>yjshih23@gmail.com</a>，施貽仁)。<br/>
       祝聆聽愉快！
-      <div style={{margin:"10px",textAlign:"center"}}>
+      <br/>問卷以結束！
+      {/* <div style={{margin:"10px",textAlign:"center"}}>
       <Button onClick={handleOnclick} variant="outlined" color="primary">
       Click Me
     </Button>
     
-    </div>
+    </div> */}
     </Layout>
   )
 }

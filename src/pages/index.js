@@ -45,6 +45,10 @@ const IndexPage = () => {
             title
             url
           }
+          linkedin {
+            title
+            url
+          }
         }
       }
     }
@@ -117,7 +121,12 @@ const IndexPage = () => {
                   <div>{data.site.siteMetadata.email}</div>
                 </a>
               </div>
-
+              <div className={styles.outter_links_div}>
+              <a href={outter_links["linkedin"].url} target="_blank">
+                <LinkedIn />
+                  <div>{outter_links["linkedin"].title}</div>
+                </a>
+              </div>
               <div className={styles.outter_links_div}>
                 <a href={outter_links["twitter"].url} target="_blank">
                 <TwitterIcon />
@@ -151,12 +160,7 @@ const IndexPage = () => {
                   <div>{outter_links["medium"].title}</div>
                 </a>
               </div>
-              {/* <div className={styles.outter_links_div}>
-              <a href={outter_links["linkedin"].url} target="_blank">
-                <LinkedIn />
-                  <div>{outter_links["linkedin"].title}</div>
-                </a>
-              </div> */}
+              
               
 
               {/* <div>
