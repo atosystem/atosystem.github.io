@@ -5,7 +5,7 @@ slug: music-chain
 date: 2021-07-01T00:00:00+00:00
 thumb: ./MusicChainArchitecture-Architecture.png
 featuredImg: ./MusicChainArchitecture-Architecture.png
-tags: ["blockchain", "js", "project"]
+tags: ["blockchain", "js", "music", "project"]
 description: "A platform to make Original and Cover Visible and Valuable"
 ---
 
