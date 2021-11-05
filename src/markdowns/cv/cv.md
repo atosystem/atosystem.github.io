@@ -23,6 +23,7 @@ title: "CV"
 - 2021 Teaching Director at NTUEE Summer Camp
 
 # Award
+
 - 2019 Meichu: Hackathon 2nd prize winner
 - 2020 Bachelor Thesis Award 2nd prize "NTUEE Automatic Theremonitor System" (防疫一號)
 - 2021 Bachelor Thesis Award 3nd prize "MusicChain" [[blog](/blogs/music-chain)]
@@ -37,7 +38,7 @@ title: "CV"
   - After Effects
   - Premiere Pro
   - Cinema 4D
-- Music 
+- Music
 
 <!-- Publications -->
 <!-- ====== -->

@@ -48,8 +48,8 @@ module.exports = {
       },
       linkedin: {
         title: "Ian Shih",
-        url: "https://www.linkedin.com/in/ian-shih-77a66218b/"
-      }
+        url: "https://www.linkedin.com/in/ian-shih-77a66218b/",
+      },
     },
   },
   plugins: [
@@ -63,8 +63,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              "linkImagesToOriginal" : false,
-              "showCaptions" : false,
+              linkImagesToOriginal: false,
+              showCaptions: false,
             },
           },
           {
@@ -151,9 +151,9 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: process.env.IG_ACCESS_TOKEN
-      }
-    }
+        access_token: process.env.IG_ACCESS_TOKEN,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

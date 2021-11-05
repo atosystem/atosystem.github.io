@@ -1,18 +1,19 @@
 ---
 title: Theme Transformer
 stack: HTML & python
-slug: thm-trnfrm
+slug: theme-transformer
 date: 2021-11-02T00:00:00+00:00
-thumb: ./MusicChainArchitecture-Architecture.png
-featuredImg: 
-tags: ["music", "ML","research"]
+thumb: ./overall2model.jpg
+featuredImg:
+tags: ["music", "ML", "research"]
 description: "Theme-based music generation"
 ---
 
-# Theme Transformer: Symbolic Music Generationwith Theme-Conditioned Transformer
+# Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer
 
 ![](overall2model.jpg)
-<!-- 
+
+<!--
 ## Demo
 | ID| Theme | Real Data | Baseline | Theme Transformer
 | -- | -------- | -------- | -------- | -------- |
@@ -30,17 +31,16 @@ description: "Theme-based music generation"
 
 ## Figures
 |#id| First 24 bars  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   | Melody Embedding Distance|
-| ------ | -------- | -------- | 
-|875| <img src="testdata_24bars_modelC/test_875_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_875_front24.jpg" width="100%"/> | 
-|888| <img src="testdata_24bars_modelC/test_888_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_888_front24.jpg" width="100%"/> | 
-|890| <img src="testdata_24bars_modelC/test_890_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_890_front24.jpg" width="100%"/> | 
-|893| <img src="testdata_24bars_modelC/test_893_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_893_front24.jpg" width="100%"/> | 
-|894| <img src="testdata_24bars_modelC/test_894_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_894_front24.jpg" width="100%"/> | 
-|896| <img src="testdata_24bars_modelC/test_896_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_896_front24.jpg" width="100%"/> | 
-|899| <img src="testdata_24bars_modelC/test_899_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_899_front24.jpg" width="100%"/> | 
-|900| <img src="testdata_24bars_modelC/test_900_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_900_front24.jpg" width="100%"/> | 
-|901| <img src="testdata_24bars_modelC/test_901_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_901_front24.jpg" width="100%"/> | 
-|904| <img src="testdata_24bars_modelC/test_904_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_904_front24.jpg" width="100%"/> | 
-|908| <img src="testdata_24bars_modelC/test_908_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_908_front24.jpg" width="100%"/> | 
+| ------ | -------- | -------- |
+|875| <img src="testdata_24bars_modelC/test_875_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_875_front24.jpg" width="100%"/> |
+|888| <img src="testdata_24bars_modelC/test_888_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_888_front24.jpg" width="100%"/> |
+|890| <img src="testdata_24bars_modelC/test_890_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_890_front24.jpg" width="100%"/> |
+|893| <img src="testdata_24bars_modelC/test_893_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_893_front24.jpg" width="100%"/> |
+|894| <img src="testdata_24bars_modelC/test_894_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_894_front24.jpg" width="100%"/> |
+|896| <img src="testdata_24bars_modelC/test_896_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_896_front24.jpg" width="100%"/> |
+|899| <img src="testdata_24bars_modelC/test_899_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_899_front24.jpg" width="100%"/> |
+|900| <img src="testdata_24bars_modelC/test_900_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_900_front24.jpg" width="100%"/> |
+|901| <img src="testdata_24bars_modelC/test_901_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_901_front24.jpg" width="100%"/> |
+|904| <img src="testdata_24bars_modelC/test_904_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_904_front24.jpg" width="100%"/> |
+|908| <img src="testdata_24bars_modelC/test_908_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_908_front24.jpg" width="100%"/> |
 |909| <img src="testdata_24bars_modelC/test_909_front24.jpg" width="100%"/> | <img src="testdata_24bars_modelC/test_909_front24.jpg" width="100%"/> |  -->
-

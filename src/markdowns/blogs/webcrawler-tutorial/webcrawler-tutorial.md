@@ -25,11 +25,12 @@ Github : [Link](https://github.com/ntueecamp/webcrawler_tutorial)
   - [selenium](https://pypi.org/project/selenium/) (simulate web browser)(Less investigating effort but low effeciency)
 
 ## 📖 Background Knowledge
+
 ![web request and response](./webrequest_response.png)
 (picture from [Understanding the HTTP request-response model](https://www.oreilly.com/library/view/restful-java-web/9781788294041/1889f99d-f907-41c3-a0f0-925bbf1d3825.xhtml))
 
-* web requests and response
-* stateless
+- web requests and response
+- stateless
 
 > Usefull website for discovering : [get-request-example](https://reqbin.com/req/nfilsyk5/get-request-example)
 
@@ -252,6 +253,7 @@ print(req_unlike.text)
 6. Hands-on experiment on instagram crawling.
 
 ## 🚀 Some Directions For Futher Projects
+
 1. [cloudscraper](https://github.com/VeNoMouS/cloudscraper)
 2. Posting Instagram Feed
 3. Crawl Other Website

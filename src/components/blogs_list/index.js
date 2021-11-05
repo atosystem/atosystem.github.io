@@ -44,10 +44,18 @@ const BlogsList = ({ nodes }) => {
                             boxShadow: "0 0 10px 10px #FFF",
                           }}
                         >
-                          <Typography variant="h5">
-                            {p.frontmatter.title}
-                          </Typography>
-
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                              alignContent: "center",
+                            }}
+                          >
+                            <Typography variant="h5">
+                              {p.frontmatter.title}
+                            </Typography>
+                            <div>{p.frontmatter.date}</div>
+                          </div>
                           {/* <Img fluid={p.frontmatter.thumb.childImageSharp.fluid} /> */}
                           <p>{p.excerpt}</p>
                         </div>
@@ -79,7 +87,6 @@ const BlogsList = ({ nodes }) => {
                               )
                             })}
                           </div>
-                          <div>{p.frontmatter.date}</div>
                         </div>
                       </div>
                     </BackgroundImage>
