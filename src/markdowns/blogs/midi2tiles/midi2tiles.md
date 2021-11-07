@@ -10,6 +10,7 @@ description: "A tool for creating synthesia-like piano tiles effect from midi fi
 ---
 
 # Midi2Tiles
+
 <p>
 <a href="https://github.com/atosystem/midi2Tiles/"><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/atosystem/midi2tiles/main"></a>
 <a href="https://github.com/atosystem/midi2Tiles/issues" target="_blank"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/atosystem/midi2tiles"></a>
@@ -28,13 +29,14 @@ Nonetheless, to output mp4 files from midi, we are required to purchase Synthesi
 
 To solve this problem, I implemented a simple version of piano tiles video maker. All you need is to prepare your midi file and run the python code to generate your own synthesia-like video.
 
-
 ## Installation
+
 ```bash
 pip install midi2Tiles
 ```
 
 ## Usage
+
 ```python
 # some video settings
 VIDEO_DPI = 1000
@@ -62,16 +64,18 @@ ptc = pianoTileCreator.PianoTileCreator(video_width=VIDEO_WIDTH,
 ptc.loadMidiFile("<input midi file>",verbose=True)
 ptc.render("<output video file>",verbose=True)
 ```
+
 ## Parameters for output video
 
-* `video_width (int)`: the width of the output video (px)
-* `video_height (int)`: the height of the output video (px)
-* `video_dpi (int)`: the dpi of the output video (px)
-* `video_fps (int)`: the fps of the output video (px)
-* `KB_ratio (float)`: the proportion of the piano keyboard display. This value should be in [0,1)
-* `tile_velocity (int)`: the velocity of the falling tiles
-* `key_color (string)`: the color of the tiles
-* `showKeyVelocity (bool)`: if True, the velocity of midi notes will affect the opacity of the tiles
+- `video_width (int)`: the width of the output video (px)
+- `video_height (int)`: the height of the output video (px)
+- `video_dpi (int)`: the dpi of the output video (px)
+- `video_fps (int)`: the fps of the output video (px)
+- `KB_ratio (float)`: the proportion of the piano keyboard display. This value should be in [0,1)
+- `tile_velocity (int)`: the velocity of the falling tiles
+- `key_color (string)`: the color of the tiles
+- `showKeyVelocity (bool)`: if True, the velocity of midi notes will affect the opacity of the tiles
 
 ## Acknowledgement
+
 The ratio of the piano design is referenced from https://github.com/gin66/piano_keyboard

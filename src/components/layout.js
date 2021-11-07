@@ -78,11 +78,11 @@ const Layout = ({ children }) => {
                 textAlign: "center",
               }}
             >
-              © {new Date().getFullYear()}, 
+              © {new Date().getFullYear()},
               {/* Built with
               {` `}
               <a href="https://www.gatsbyjs.com">Gatsby</a> */}
-               By Ian Shih
+              By Ian Shih
             </footer>
           </div>
         </div>

@@ -178,7 +178,9 @@ const IndexPage = () => {
               National Taiwan University
             </p>
             <p>Passionate in music and technology</p>
-            <p>Listen to my music? <Link to="/about">here</Link></p>
+            <p>
+              Listen to my music? <Link to="/about">here</Link>
+            </p>
             <div className={styles.section_div}>
               <h3>Recent Projects</h3>
               <Link to="/tags/project">more...</Link>
