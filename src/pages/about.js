@@ -109,14 +109,25 @@ const AboutPage = () => {
             allow="autoplay"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1343201752&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
           ></iframe>
-          <div 
-          style={{fontSize: "10px",color: "#cccccc", lineBreak: "anywhere", wordBreak: "normal",overflow: "hidden",whiteSpace: "nowrap",textOverflow:"ellipsis",fontFamily: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif", fontWeight: "100"}}
+          <div
+            style={{
+              fontSize: "10px",
+              color: "#cccccc",
+              lineBreak: "anywhere",
+              wordBreak: "normal",
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+              textOverflow: "ellipsis",
+              fontFamily:
+                "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
+              fontWeight: "100",
+            }}
           >
             <a
               href="https://soundcloud.com/atosystem"
               title="atosystem"
               target="_blank"
-              style={{color: "#cccccc", textDecoration:"none"}}
+              style={{ color: "#cccccc", textDecoration: "none" }}
             >
               atosystem
             </a>{" "}
@@ -125,7 +136,7 @@ const AboutPage = () => {
               href="https://soundcloud.com/atosystem/sets/piano-remix-by-cornerhipster"
               title="Piano Remix/Improvisation by Cornerhipster"
               target="_blank"
-              style={{color: "#cccccc",  textDecoration: "none"}}
+              style={{ color: "#cccccc", textDecoration: "none" }}
             >
               Piano Remix/Improvisation by Cornerhipster
             </a>

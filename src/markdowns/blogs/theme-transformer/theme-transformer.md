@@ -4,29 +4,28 @@ stack: HTML & python
 slug: theme-transformer
 date: 2021-11-02T00:00:00+00:00
 thumb: ./overall2model.jpg
-featuredImg: 
+featuredImg:
 tags: ["music", "ML", "research", "project"]
 description: "Theme-based music generation"
 ---
 
 # Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer
 
-
 <!-- <img height="600px" src="./model_overall.png"></img> -->
+
 ![](./model_overall.png)
 
 # Demo
 
-* Given Theme 
+- Given Theme
 
-    `audio: /theme-transformer-audio/899_Theme.mp3`
-* Generated music
+  `audio: /theme-transformer-audio/899_Theme.mp3`
 
-    | Prompt-based| Theme-based|
-    | --| --|
-    | `audio: /theme-transformer-audio/899_Baseline.mp3`|  `audio: /theme-transformer-audio/899_ThemeTransformer.mp3` |
+- Generated music
 
-
+  | Prompt-based                                       | Theme-based                                                |
+  | -------------------------------------------------- | ---------------------------------------------------------- |
+  | `audio: /theme-transformer-audio/899_Baseline.mp3` | `audio: /theme-transformer-audio/899_ThemeTransformer.mp3` |
 
 (For more demo, go to [demo page](https://atosystem.github.io/ThemeTransformer/#demo))
 
@@ -100,6 +99,7 @@ After training the embedding model, we conduct DBScan clustering algorithm on th
 Here is an example of the melody embedding distance visualization.
 ![](./melEmb_dist/plot_899.jpg)
 For more figures, click [here](https://atosystem.github.io/ThemeTransformer/#figures)
+
 ### Theme Transformer
 
 ![Theme transformer decoder](./modelC.jpg)
