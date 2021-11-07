@@ -4,14 +4,31 @@ stack: HTML & python
 slug: theme-transformer
 date: 2021-11-02T00:00:00+00:00
 thumb: ./overall2model.jpg
-featuredImg:
+featuredImg: 
 tags: ["music", "ML", "research", "project"]
 description: "Theme-based music generation"
 ---
 
 # Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer
 
-![](overall2model.jpg)
+
+<!-- <img height="600px" src="./model_overall.png"></img> -->
+![](./model_overall.png)
+
+# Demo
+
+* Given Theme 
+
+    `audio: /theme-transformer-audio/899_Theme.mp3`
+* Generated music
+
+    | Prompt-based| Theme-based|
+    | --| --|
+    | `audio: /theme-transformer-audio/899_Baseline.mp3`|  `audio: /theme-transformer-audio/899_ThemeTransformer.mp3` |
+
+
+
+(For more demo, go to [demo page](https://atosystem.github.io/ThemeTransformer/#demo))
 
 ## Links
 
@@ -80,13 +97,16 @@ Within these augmentation techniques are considered positve samples for contrast
 
 After training the embedding model, we conduct DBScan clustering algorithm on the melody embeddings and search for the largest cluster.
 
+Here is an example of the melody embedding distance visualization.
+![](./melEmb_dist/plot_899.jpg)
+For more figures, click [here](https://atosystem.github.io/ThemeTransformer/#figures)
 ### Theme Transformer
 
 ![Theme transformer decoder](./modelC.jpg)
 
 The core idea of **Theme Transformer** is to utilize two memory network. One for recording the past generated music content, the other one for the theme condition. This is done by utilizing parallel cross and self attention modules with gating mechanism. The theme condition is given at the encoder side, hence cross attention can be viewed as the module for considering the _theme_ and self attention is for considering all the previous generated music content. Together, they formed a two memory network architecture.
 
-## Hope this blog helps you
+## Feel you free to contact me!
 
 <!--
 ## Demo

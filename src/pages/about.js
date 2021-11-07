@@ -100,7 +100,38 @@ const AboutPage = () => {
           </a>
           ! Here is the music I made!
         </p>
-        <iframe
+        <div style={{ flexBasis: "35%" }}>
+          <iframe
+            width="100%"
+            height="450"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1343201752&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
+          ></iframe>
+          <div 
+          style={{fontSize: "10px",color: "#cccccc", lineBreak: "anywhere", wordBreak: "normal",overflow: "hidden",whiteSpace: "nowrap",textOverflow:"ellipsis",fontFamily: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif", fontWeight: "100"}}
+          >
+            <a
+              href="https://soundcloud.com/atosystem"
+              title="atosystem"
+              target="_blank"
+              style={{color: "#cccccc", textDecoration:"none"}}
+            >
+              atosystem
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://soundcloud.com/atosystem/sets/piano-remix-by-cornerhipster"
+              title="Piano Remix/Improvisation by Cornerhipster"
+              target="_blank"
+              style={{color: "#cccccc",  textDecoration: "none"}}
+            >
+              Piano Remix/Improvisation by Cornerhipster
+            </a>
+          </div>
+        </div>
+        {/* <iframe
           style={{ flexBasis: "35%" }}
           loading="lazy"
           width="20%"
@@ -111,7 +142,7 @@ const AboutPage = () => {
           data-rocket-lazyload="fitvidscompatible"
           class="lazyloaded"
           data-ll-status="loaded"
-        ></iframe>
+        ></iframe> */}
       </div>
     </Layout>
   )
