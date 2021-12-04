@@ -15,6 +15,8 @@ description: "Theme-based music generation"
 ## TL;DR
 In this project, I create a web interface and server for smart phones to send sensors data to pure data with only a simple scan of a QR Code.
 
+Github page: [link](https://github.com/atosystem/sensor_your_music)
+
 ## Motivation
 Mobile phones are prevalent among people in nowadays as well as network connection.
 Is there anything we can do with music and people?
@@ -43,4 +45,4 @@ In this project, I develop a website for user to connect their phones to puredat
 The following is the basic structure of data trasnmitting
 ![](./structure.png)
 
-First, the web browser of localhost is opened. Then it generate a `connect_code` to firebase. The `connect_code` and the webpage for mobile phone is subsequently packed in a QR Code. After the user scan the QR code  with his/her phone, the phone's web browser is connected to that of localhost via WebRTC with the matching of `connect_code`. The rest of the data transmission process is purely P2P. As for the server side, the message received by localhost web browser is then sent to backend server via webspcket (since only websocket is allowed in web browser). The backend sever then send the message to coressponding udp port of puredata. Pureda employs [netreceive -u \<udp port number\>] to receive message.
+First, the web browser of localhost is opened. Then it generate a `connect_code` to firebase. The `connect_code` and the webpage for mobile phone is subsequently packed in a QR Code. After the user scan the QR code  with his/her phone, the phone's web browser is connected to that of localhost via WebRTC with the matching of `connect_code`. The rest of the data transmission process is purely P2P. As for the server side, the message received by localhost web browser is then sent to backend server via webspcket (since only websocket is allowed in web browser). The backend sever then send the message to coressponding udp port of puredata. Puredata employs [netreceive -u \<udp port number\>] to receive message.
