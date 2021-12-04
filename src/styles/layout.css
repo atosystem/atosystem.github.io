@@ -615,3 +615,9 @@ pre tt:after {
   background-color:transparent;
 }
 
+
+@media (max-width: 640px) {
+  .body_container{
+    width: 100%;
+  }
+}

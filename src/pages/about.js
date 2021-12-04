@@ -3,14 +3,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../styles/index.module.css"
-import Img from "gatsby-image"
+import * as styles from "../styles/about.module.css"
 
-import TwitterIcon from "@material-ui/icons/Twitter"
-import { Email, Facebook, GitHub, Instagram } from "@material-ui/icons"
 
-import { FaMedium } from "@react-icons/all-files/fa/FaMedium"
-import { useEffect } from "react"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -57,11 +52,12 @@ const AboutPage = () => {
       </p>
       <h2>Maker experience</h2>
       <div
-        style={{
-          display: "flex",
-          alignContent: "space-between",
-          justifyContent: "space-between",
-        }}
+        // style={{
+        //   display: "block",
+        //   alignContent: "space-between",
+        //   justifyContent: "space-between",
+        // }}
+        className={styles.div_maker_exp}
       >
         <p style={{ flexBasis: "60%", wordWrap: "break-word" }}>
           I love make projects with some hardware device such as Raspberry PI,
@@ -84,23 +80,24 @@ const AboutPage = () => {
 
       <h2>Music as my leisure</h2>
       <div
-        style={{
-          display: "flex",
-          alignContent: "space-between",
-          justifyContent: "space-between",
-        }}
+        // style={{
+        //   display: "flex",
+        //   alignContent: "space-between",
+        //   justifyContent: "space-between",
+        // }}
+        className={styles.div_music_exp}
       >
         <p style={{ flexBasis: "60%" }}>
-          In my leisure time, I enjoy remixing or composing music! My
-          inspiration often comes from my living, such as ringtone of an mobile
-          app, melody of Taipei Metro System, or the pop/clasical music in my
-          life. My music compositions are now available on{" "}
+          In my leisure time, I enjoy remixing or composing music! 
+          {/* My inspiration often comes from my living, such as ringtone of an mobile */}
+          {/* app, melody of Taipei Metro System, or the pop/clasical music in my life.  */}
+          My music compositions/improvisations are now available on{" "}
           <a target="_blank" href="https://soundcloud.com/atosystem">
             SoundCloud
           </a>
           ! Here is the music I made!
         </p>
-        <div style={{ flexBasis: "35%" }}>
+        <div style={{ flexBasis: "35%" , textAlign: "center"}}>
           <iframe
             width="100%"
             height="450"
