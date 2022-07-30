@@ -3,7 +3,7 @@ title: "CV"
 ---
 
 <object data=
-"/cv.pdf" width="100%" style="height:70vh;">
+"/CV.pdf" width="100%" style="height:70vh;">
 </object>
 
 <!-- width="800"  -->
