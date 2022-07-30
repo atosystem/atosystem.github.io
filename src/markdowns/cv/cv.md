@@ -2,7 +2,14 @@
 title: "CV"
 ---
 
-# Education
+<object data=
+"/cv.pdf" width="100%" style="height:70vh;">
+</object>
+
+<!-- width="800"  -->
+<!-- height="500" -->
+
+<!-- # Education
 
 - B.S. in Electrical Engineering, Nation Taiwan University, (2018 - )
   - Selected Course :
@@ -38,7 +45,7 @@ title: "CV"
   - After Effects
   - Premiere Pro
   - Cinema 4D
-- Music
+- Music -->
 
 <!-- Publications -->
 <!-- ====== -->

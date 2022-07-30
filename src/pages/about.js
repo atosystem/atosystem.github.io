@@ -1,11 +1,9 @@
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/about.module.css"
-
-
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -15,6 +13,15 @@ const AboutPage = () => {
         name: { eq: "intro_bgm" }
       ) {
         publicURL
+      }
+      img_social_devotion_award: file(
+        relativePath: { eq: "social_devotion_award.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
   `)
@@ -61,8 +68,21 @@ const AboutPage = () => {
       >
         <p style={{ flexBasis: "60%", wordWrap: "break-word" }}>
           I love make projects with some hardware device such as Raspberry PI,
-          ESP32 etc. <br />
-          The video is ghe performance of Light Dance, which is 100% homemade by
+          ESP32 etc.
+        </p>
+        <h3>NTUEE Automatic Theremonitor System</h3>
+        <p style={{ flexBasis: "60%", wordWrap: "break-word" }}>
+          To collect the COVID-19 trace in NTU Campus, my classmates and I
+          develop an Automatic Theremonitor System which record the daily
+          temperature of all the faculty and students in the campus.
+          <Img fluid={data.img_social_devotion_award.childImageSharp.fluid} />
+          We recieved the Social Devotion Specail Award on the NTU Anniversary
+          Ceremony by Dr. Chung-Ming Kuan, the President of NTU.
+        </p>
+
+        <h3>Light Dance</h3>
+        <p style={{ flexBasis: "60%", wordWrap: "break-word" }}>
+          The video is the performance of Light Dance, which is 100% homemade by
           my peers and me. I am responsible for communication between the lights
           on each dancers and the laptop playing the music.
         </p>
@@ -70,7 +90,7 @@ const AboutPage = () => {
           style={{ flexBasis: "35%" }}
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/OTdngU70CHo"
+          src="https://www.youtube.com/embed/iHg-aeB9Jpo"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -88,7 +108,7 @@ const AboutPage = () => {
         className={styles.div_music_exp}
       >
         <p style={{ flexBasis: "60%" }}>
-          In my leisure time, I enjoy remixing or composing music! 
+          In my leisure time, I enjoy remixing or composing music!
           {/* My inspiration often comes from my living, such as ringtone of an mobile */}
           {/* app, melody of Taipei Metro System, or the pop/clasical music in my life.  */}
           My music compositions/improvisations are now available on{" "}
@@ -97,7 +117,7 @@ const AboutPage = () => {
           </a>
           ! Here is the music I made!
         </p>
-        <div style={{ flexBasis: "35%" , textAlign: "center"}}>
+        <div style={{ flexBasis: "35%", textAlign: "center" }}>
           <iframe
             width="100%"
             height="450"
