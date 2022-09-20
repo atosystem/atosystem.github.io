@@ -6,14 +6,20 @@ date: 2021-07-01T00:00:00+00:00
 thumb: ./MusicChainArchitecture-Architecture.png
 featuredImg: ./MusicChainArchitecture-Architecture.png
 tags: ["blockchain", "js", "music", "project"]
-description: "A platform to make Original and Cover Visible and Valuable"
+description: "A platform to make Original and Cover Music Visible and Valuable"
 ---
 
 # MusicChain
 
-> _A platform to make Original and Cover Visible and Valuable_
+> _A platform to make Original and Cover Music Visible and Valuable_
 
-Demo Link : [Youtube](https://www.youtube.com/watch?v=rmtS9UxWCMc)
+## TL;DR
+
+There are lots of talented artists on the Internet. They often upload their cover songs to media platforms such as Youtube, Soundcloud, StreetVoice, and so on. Nonetheless, there is no such a system that utilizes the relation between original and covers, rendering either a well-known song with many cover versions without people knowing who the original composer is, or a popular original song with people having a hard time finding other cover versions.
+
+To this end, we create _MusicChain_, which employs blockchain to record the relations of original and cover songs in a graph. Furthermore, we develop a profit-sharing mechanism based on this cover song relation graph, which is quite a novel idea to our best knowledge. Specifically, both the original artists and the cover artists benefit from this system, which we believe can stir the motivation for music creation. As a result, we make _original and cover music more visible and valuable._
+
+Demo Link : [Youtube](https://www.youtube.com/watch?v=rmtS9UxWCMc) (In Mandarin)
 Github : [repo](https://github.com/ntueecamp/webcrawler_tutorial)
 
 ## Setup
