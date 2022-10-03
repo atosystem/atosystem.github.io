@@ -177,7 +177,10 @@ const IndexPage = () => {
               An undergraduate student studying in Electrical Engineering at
               National Taiwan University
             </p>
-            <p>Passionate in music and technology</p>
+            <p>
+              Passionate in music and technology. Currently doing research on
+              MIR and Speech Processing
+            </p>
             <p>
               Listen to my music? <Link to="/about">here</Link>
             </p>
