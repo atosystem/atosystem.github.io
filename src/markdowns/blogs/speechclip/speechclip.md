@@ -2,7 +2,7 @@
 title: SpeechCLIP
 stack: HTML & python
 slug: speechclip
-date: 2021-11-02T00:00:00+00:00
+date: 2022-10-03T00:00:00+00:00
 thumb: ./model_summary.jpg
 featuredImg:
 tags: ["speech", "visual", "ML", "research", "project"]
