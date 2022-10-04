@@ -5,3 +5,16 @@
  */
 
 // You can delete this file if you're not using it
+// import { Link } from "gatsby"
+// export const onRenderBody = ({ setHeadComponents }) => {
+//     setHeadComponents([
+//       <link
+//         rel="preload"
+//         href="/fonts/ChenYuluoyan-Thin.ttf"
+//         as="font"
+//         type="font/ttf"
+//         crossOrigin="anonymous"
+//         key="ChenYuluoyanThin"
+//       />,
+//     ])
+//   }

@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import * as styles from "./styles/index.module.css"
+import * as styles from "../styles/blog_details.module.css"
 import Img from "gatsby-image"
 
 import Card from "@material-ui/core/Card"
@@ -44,7 +44,10 @@ const BlogDetails = ({ data }) => {
             <Img fluid={featuredImg.childImageSharp.fluid} />
           ) : null}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          className={styles.blog_html}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </Layout>
   )

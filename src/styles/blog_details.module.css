@@ -1,0 +1,14 @@
+/* @font-face {
+    font-family: 'ChenYuluoyanThin';
+
+    src: url(/fonts/ChenYuluoyan-Thin.ttf) format("ttf");
+} */
+
+.blog_html{
+    
+}
+
+.blog_html blockquote{
+    font-style: italic;
+    /* font-family: "ChenYuluoyanThin"; */
+}
