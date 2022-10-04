@@ -21,9 +21,31 @@ Parallel speech-text data is expensive and hard to collect, compared to paired s
 
 Links: [arXiv](https://arxiv.org/abs/2210.00705) | [code](https://github.com/atosystem/SpeechCLIP)
 
-## Abstract
+## Model Structure
 
-Data-driven speech processing models usually perform well with a large amount of text supervision, but collecting transcribed speech data is costly. Therefore, we propose SpeechCLIP, a novel framework bridging speech and text through images to enhance speech models without transcriptions. We leverage state-of-the-art pre-trained HuBERT and CLIP, aligning them via paired images and spoken captions with minimal fine-tuning. SpeechCLIP outperforms prior state-of-the-art on image-speech retrieval and performs zero-shot speech-text retrieval without direct supervision from transcriptions. Moreover, SpeechCLIP can directly retrieve semantically related keywords from speech.
+In this work, we propose 2 architecture to for integrating HuBERT and CLIP.
+
+![](model_details.png)
+
+### Vector Quantization
+
+![](vq.png)
+
+## Experiments
+
+### Image-Speech Retrieval
+
+![](imagespeechRet.png)
+
+### Zero-Shot Speech-Text Retrieval
+
+![](zeroshotSpeechText.png)
+
+### Keyword Discovery
+
+![](kw_discovery.png)
+
+![](kw_discovery_1.png)
 
 ## Cite our work!
 
