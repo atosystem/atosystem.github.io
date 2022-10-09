@@ -55,7 +55,8 @@ const AboutPage = () => {
     </iframe> */}
       <p>
         Hi! I am Ian Shih(施貽仁). Currently, I am studying Electrical
-        Engineering in National Taiwan University.
+        Engineering in National Taiwan University.<br/>
+        Besides research and studies, I'm also fascinated in some areas:
       </p>
       <h2>Maker experience</h2>
       <div
@@ -75,7 +76,7 @@ const AboutPage = () => {
           To collect the COVID-19 trace in NTU Campus, my classmates and I
           develop an Automatic Theremonitor System which record the daily
           temperature of all the faculty and students in the campus.
-          <Img fluid={data.img_social_devotion_award.childImageSharp.fluid} />
+          <Img style={{width: "50%",margin:"auto"}} fluid={data.img_social_devotion_award.childImageSharp.fluid} />
           We recieved the Social Devotion Specail Award on the NTU Anniversary
           Ceremony by Dr. Chung-Ming Kuan, the President of NTU.
         </p>
@@ -86,16 +87,18 @@ const AboutPage = () => {
           my peers and me. I am responsible for communication between the lights
           on each dancers and the laptop playing the music.
         </p>
+        <div style={{margin:"auto",width: "100%"}}>
         <iframe
           style={{ flexBasis: "35%" }}
-          width="560"
-          height="315"
+          width="100%"
+          height="500"
           src="https://www.youtube.com/embed/iHg-aeB9Jpo"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        </div>
       </div>
 
       <h2>Music as my leisure</h2>
@@ -171,6 +174,23 @@ const AboutPage = () => {
           class="lazyloaded"
           data-ll-status="loaded"
         ></iframe> */}
+      </div>
+      <h2>VFX</h2>
+      <div>
+        I love applying Visual Effects in videos. One of my hobby is to watch the VFX breakdown of famous movies. It always render me astonished about how realistic VFX can be.
+        The following a video I made, where I replace the MOS Burger logo with MOSFET(a kind of transistor).
+        <div style={{margin:"auto",width: "100%"}}>
+        <iframe
+          style={{ flexBasis: "35%" }}
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/8Tr-fAMKnwI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        </div>
       </div>
     </Layout>
   )
