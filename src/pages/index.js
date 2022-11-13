@@ -178,8 +178,10 @@ const IndexPage = () => {
               National Taiwan University
             </p>
             <p>
-              Passionate in music and technology. Currently doing research on
-              MIR and Speech Processing
+              <Link to="/publication">Research</Link> in speech processing,
+              multimodal learning, music information retrieval.
+              <br />
+              Currently applying for EECS Ph.D. Fall'23 in the US
             </p>
             <p>
               Listen to my music? <Link to="/about">here</Link>

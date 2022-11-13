@@ -57,7 +57,12 @@ const AboutPage = () => {
         Hi! I am Ian Shih(施貽仁). Currently, I am studying Electrical
         Engineering in National Taiwan University.
         <br />
-        Besides research and studies, I'm also fascinated in some areas:
+        I am deeply enthralled by the application of cross-disciplinary domain,
+        espically multimedia and technologies. <br />
+        Hence, my research falls in multimedia processing (speech, music,
+        multimodal learning). <br />
+        Besides research, I'm very much a hands-on person. I'm fascinated in
+        some areas: maker, music improvisations/remix, video vfx... <br />
       </p>
       <h2>Maker experience</h2>
       <div
@@ -181,10 +186,13 @@ const AboutPage = () => {
       </div>
       <h2>VFX</h2>
       <div>
-        I love applying Visual Effects in videos. One of my hobby is to watch
-        the VFX breakdown of famous movies. It always render me astonished about
-        how realistic VFX can be. The following a video I made, where I replace
-        the MOS Burger logo with MOSFET(a kind of transistor).
+        <div>
+          I love applying Visual Effects in videos. One of my hobby is to watch
+          the VFX breakdown of famous movies. It always render me astonished
+          about how realistic VFX can be. The following a video I made, where I
+          replace the MOS Burger logo with MOSFET(a kind of transistor).
+        </div>
+        <br />
         <div style={{ margin: "auto", width: "100%" }}>
           <iframe
             style={{ flexBasis: "35%" }}

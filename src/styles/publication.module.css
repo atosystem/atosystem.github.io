@@ -1,0 +1,17 @@
+papertitle {
+  color: rgb(19, 100, 250);
+  font-size: larger;
+}
+
+.pub_links {
+  font-size: small;
+  /* color: brown; */
+  display: flex;
+  /* justifyContent: center; */
+  flex-wrap: wrap;
+}
+
+
+.pub_links > * {
+  margin: 3px;
+}

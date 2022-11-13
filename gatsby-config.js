@@ -17,6 +17,10 @@ module.exports = {
         path: "/about",
       },
       {
+        title: "Publications",
+        path: "/publication",
+      },
+      {
         title: "CV",
         path: "/cv",
       },
