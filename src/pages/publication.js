@@ -73,7 +73,7 @@ const PublicatioinPage = () => {
               size="small"
               label="blog"
               component="a"
-              href="blogs/speechclip"
+              href="/blogs/speechclip"
               variant="outlined"
               color="primary"
               clickable
@@ -124,7 +124,7 @@ const PublicatioinPage = () => {
               size="small"
               label="blog"
               component="a"
-              href="blogs/theme-transformer"
+              href="/blogs/theme-transformer"
               variant="outlined"
               color="primary"
               clickable
