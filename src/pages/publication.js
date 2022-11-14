@@ -115,7 +115,7 @@ const PublicatioinPage = () => {
               size="small"
               label="demo"
               component="a"
-              href="https://atosystem.github.io/ThemeTransformer/#demor"
+              href="https://atosystem.github.io/ThemeTransformer/#demo"
               variant="outlined"
               color="primary"
               clickable
