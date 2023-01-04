@@ -161,13 +161,12 @@ const IndexPage = () => {
                   <div>{outter_links["facebook"].title}</div>
                 </a>
               </div>
-              <div className={styles.outter_links_div}>
+              {/* <div className={styles.outter_links_div}>
                 <a href={outter_links["instagram"].url} target="_blank">
                   <Instagram />
                   <div>{outter_links["instagram"].title}</div>
                 </a>
-              </div>
-
+              </div> */}
               <div className={styles.outter_links_div}>
                 {/* <Icon className="fas fa-adjust" fontSize="small" /> */}
                 <a href={outter_links["medium"].url} target="_blank">
