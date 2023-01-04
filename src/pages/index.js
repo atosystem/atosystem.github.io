@@ -16,6 +16,7 @@ import {
 } from "@material-ui/icons"
 
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium"
+import { SiGooglescholar } from "@react-icons/all-files/si/SiGooglescholar"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -52,6 +53,10 @@ const IndexPage = () => {
               url
             }
             linkedin {
+              title
+              url
+            }
+            googleScholar {
               title
               url
             }
@@ -142,6 +147,12 @@ const IndexPage = () => {
                 <a href={outter_links["github"].url} target="_blank">
                   <GitHub />
                   <div>{outter_links["github"].title}</div>
+                </a>
+              </div>
+              <div className={styles.outter_links_div}>
+                <a href={outter_links["googleScholar"].url} target="_blank">
+                  <SiGooglescholar size="26px" />
+                  <div>{outter_links["googleScholar"].title}</div>
                 </a>
               </div>
               <div className={styles.outter_links_div}>

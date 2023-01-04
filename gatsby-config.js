@@ -54,6 +54,10 @@ module.exports = {
         title: "Ian Shih",
         url: "https://www.linkedin.com/in/ian-shih-77a66218b/",
       },
+      googleScholar: {
+        title: "Yi-Jen Shih",
+        url: "https://scholar.google.com.tw/citations?user=f1feDTMAAAAJ",
+      },
     },
   },
   plugins: [
