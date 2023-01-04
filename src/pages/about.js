@@ -86,7 +86,7 @@ const AboutPage = () => {
             style={{ width: "50%", margin: "auto" }}
             fluid={data.img_social_devotion_award.childImageSharp.fluid}
           />
-          We recieved the Social Devotion Specail Award on the NTU Anniversary
+          We recieved the Social Devotion Special Award on the NTU Anniversary
           Ceremony by Dr. Chung-Ming Kuan, the President of NTU.
         </p>
 

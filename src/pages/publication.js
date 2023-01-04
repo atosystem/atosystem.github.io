@@ -78,6 +78,24 @@ const PublicatioinPage = () => {
               color="primary"
               clickable
             />
+            <Chip
+              size="small"
+              label="poster"
+              component="a"
+              href="/publications_files/speechclip/SpeechCLIP_slt_poster_v2.pdf"
+              variant="outlined"
+              color="primary"
+              clickable
+            />
+            <Chip
+              size="small"
+              label="present@JSALT'22"
+              component="a"
+              href="https://www.youtube.com/watch?v=_GbZRM18NxQ&t=2118s"
+              variant="outlined"
+              color="primary"
+              clickable
+            />
           </div>
           <p></p>
         </div>
@@ -125,6 +143,15 @@ const PublicatioinPage = () => {
               label="blog"
               component="a"
               href="/blogs/theme-transformer"
+              variant="outlined"
+              color="primary"
+              clickable
+            />
+            <Chip
+              size="small"
+              label="talk@MILA"
+              component="a"
+              href="https://www.youtube.com/watch?v=U2T_1HH0yH0"
               variant="outlined"
               color="primary"
               clickable

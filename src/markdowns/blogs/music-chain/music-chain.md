@@ -20,7 +20,7 @@ There are lots of talented artists on the Internet. They often upload their cove
 To this end, we create _MusicChain_, which employs blockchain to record the relations of original and cover songs in a graph. Furthermore, we develop a profit-sharing mechanism based on this cover song relation graph, which is quite a novel idea to our best knowledge. Specifically, both the original artists and the cover artists benefit from this system, which we believe can stir the motivation for music creation. As a result, we make _original and cover music more visible and valuable._
 
 Demo Link : [Youtube](https://www.youtube.com/watch?v=rmtS9UxWCMc) (In Mandarin)
-Github : [repo](https://github.com/ntueecamp/webcrawler_tutorial)
+Github : [repo](https://github.com/atosystem/MusicChain)
 
 ## Setup
 
