@@ -184,7 +184,8 @@ const IndexPage = () => {
         <div className={styles.profolio_right}>
           <div className={styles.profolio_right_content}>
             <p>
-              Incoming Computer Science PhD student at UT Austin
+              Incoming Computer Science PhD student at UT Austin.
+              <br/>
               Previously, studying in Electrical Engineering at
               National Taiwan University
             </p>
