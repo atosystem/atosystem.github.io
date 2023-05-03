@@ -184,14 +184,15 @@ const IndexPage = () => {
         <div className={styles.profolio_right}>
           <div className={styles.profolio_right_content}>
             <p>
-              An undergraduate student studying in Electrical Engineering at
+              Incoming Computer Science PhD student at UT Austin
+              Previously, studying in Electrical Engineering at
               National Taiwan University
             </p>
             <p>
               <Link to="/publication">Research</Link> in speech processing,
               multimodal learning, music information retrieval.
               <br />
-              Currently applying for EECS Ph.D. Fall'23 in the US
+              {/* Currently applying for EECS Ph.D. Fall'23 in the US */}
             </p>
             <p>
               Listen to my music? <Link to="/about">here</Link>

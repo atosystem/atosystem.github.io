@@ -24,7 +24,7 @@ const PublicatioinPage = () => {
           Layne Berry, <strong>Yi-Jen Shih</strong>, Hsuan-Fu Wang, Heng-Jui
           Chang, Hung-yi Lee, David Harwath
           <br />
-          <em>Under Review ICASSP</em>
+          <em>International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2023</em>
           <br />
           <div className={styles.pub_links}>
             <Chip
@@ -152,6 +152,15 @@ const PublicatioinPage = () => {
               label="talk@MILA"
               component="a"
               href="https://www.youtube.com/watch?v=U2T_1HH0yH0"
+              variant="outlined"
+              color="primary"
+              clickable
+            />
+            <Chip
+              size="small"
+              label="slides@MILA"
+              component="a"
+              href="/publications_files/themeTransformer/presentation_mila.pdf"
               variant="outlined"
               color="primary"
               clickable

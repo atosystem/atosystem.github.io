@@ -319,6 +319,15 @@ const PortfolioPage = () => {
               color="primary"
               clickable
             />
+            <Chip
+              size="small"
+              label="slides@MILA"
+              component="a"
+              href="/publications_files/themeTransformer/presentation_mila.pdf"
+              variant="outlined"
+              color="primary"
+              clickable
+            />
           </div>
           <p></p>
         </div>
