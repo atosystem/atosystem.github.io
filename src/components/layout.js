@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         }
       }
       bg_img: file(
-        relativePath: { eq: "mountains.jpg" }
+        relativePath: { eq: "sun_moon_lake.jpeg" }
         sourceInstanceName: { eq: "images" }
       ) {
         childImageSharp {
