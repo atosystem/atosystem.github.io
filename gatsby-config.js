@@ -6,7 +6,7 @@ module.exports = {
     author: `@yijenshih`,
     siteUrl: process.env.URL,
     indexPageBackgroundImg: "",
-    email: "yjshih23@gmail.com",
+    email: "yjshih@utexas.edu",
     navbar_links: [
       {
         title: "Home",
