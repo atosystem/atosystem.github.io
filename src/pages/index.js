@@ -188,7 +188,7 @@ const IndexPage = () => {
               <br/>
               Previously, studying in Electrical Engineering at
               National Taiwan University
-              For recent information please checkout the new <Link to="https://www.cs.utexas.edu/~yjshih/">website</Link>.
+              For recent information please checkout the new <Link to="https://www.cs.utexas.edu/~yjshih/">website</Link> !.
             </p>
             <p>
               <Link to="/publication">Research</Link> in speech processing,
