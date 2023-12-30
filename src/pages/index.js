@@ -184,10 +184,11 @@ const IndexPage = () => {
         <div className={styles.profolio_right}>
           <div className={styles.profolio_right_content}>
             <p>
-              Incoming Computer Science PhD student at UT Austin.
+              Computer Science PhD student at UT Austin.
               <br/>
               Previously, studying in Electrical Engineering at
               National Taiwan University
+              For recent information please checkout the new <Link to="https://www.cs.utexas.edu/~yjshih/">website</Link>.
             </p>
             <p>
               <Link to="/publication">Research</Link> in speech processing,
